@@ -17,9 +17,12 @@ input {
   cursor: pointer;
   border-radius: 5px;
   border: none;
-  padding: 10px 35px;
+  /* padding: 8px 35px; */
+  width: 130px;
+  height: 37px;
   margin-left: 10px;
-  color: #4eb9cd;
+  color: rgba(0, 0, 0, 0.712);
+  font-size: larger;
 }
 
 .clearButton {
@@ -52,7 +55,8 @@ input {
 }
 ul {
   text-align: left;
-  margin-top: 20px;
+  max-width: 40%;
+  margin: 0 auto;
 }
 
 p {
@@ -88,7 +92,6 @@ p {
 
 li {
   cursor: pointer;
-  max-width: 100%;
   list-style: none;
   padding: 10px 20px;
   color: #ffffff;
@@ -104,22 +107,17 @@ li {
   -o-transition: all 0.5 ease;
 }
 
-@media (max-width: 600px) {
-  li {
-    cursor: pointer;
-    max-width: 100%;
-    list-style: none;
-    padding: 10px;
-    color: #ffffff;
-    text-transform: capitalize;
-    font-weight: 600;
-    border: 2px solid #025f70;
-    border-radius: 5px;
-    margin: 10px;
-    transition: all 0.75s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5 ease;
+@media (max-width: 900px) {
+  ul {
+    text-align: left;
+    max-width: 65%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 700px) {
+  ul {
+    text-align: left;
+    max-width: 60%;
+    margin: 0 auto;
   }
 }
